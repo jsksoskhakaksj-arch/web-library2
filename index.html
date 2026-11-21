@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Web Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="variables.css">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="pages.css">
+<link rel="stylesheet" href="responsive.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><i data-lucide="library-big"></i><span>Web Library</span></div>
+  <nav id="nav" aria-label="Main"></nav>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <label class="search"><i data-lucide="search"></i><input id="search" type="search" placeholder="Search title, URL, tags…" aria-label="Search websites"></label>
+    <button id="add-btn" class="btn primary" data-action="add"><i data-lucide="plus"></i><span>Add website</span></button>
+    <button id="theme-btn" class="icon-btn" aria-label="Toggle theme"></button>
+  </header>
+  <main id="view"></main>
+</div>
+<nav class="bottom-nav" id="bottom-nav" aria-label="Main"></nav>
+
+<dialog id="modal" aria-labelledby="modal-title">
+<form id="site-form" novalidate>
+  <header class="modal-head"><h2 id="modal-title">Add website</h2><button type="button" class="icon-btn" data-close aria-label="Close"><i data-lucide="x"></i></button></header>
+  <div class="modal-body">
+    <label class="field"><span>Website URL *</span><input name="url" type="text" inputmode="url" autocomplete="off" placeholder="https://example.com"><small class="err" data-err="url"></small></label>
+    <label class="field"><span>Title *</span><input name="title" type="text" maxlength="120"><small class="err" data-err="title"></small></label>
+    <label class="field"><span>Description</span><textarea name="description" rows="2"></textarea></label>
+    <label class="field"><span>Category</span><select name="categoryId"></select></label>
+    <label class="field"><span>Tags (comma separated)</span><input name="tags" type="text" placeholder="design, reference"></label>
+    <label class="field"><span>Personal notes</span><textarea name="notes" rows="2"></textarea></label>
+    <label class="field"><span>Thumbnail URL</span><input name="thumbnail" type="text" inputmode="url"><small class="err" data-err="thumbnail"></small></label>
+    <label class="field"><span>Favicon URL</span><input name="favicon" type="text" inputmode="url"><small class="err" data-err="favicon"></small></label>
+    <small class="err" data-err="form"></small>
+  </div>
+  <footer class="modal-foot"><button type="button" class="btn" data-close>Cancel</button><button type="submit" class="btn primary">Save website</button></footer>
+</form>
+</dialog>
+</body>
+</html>
