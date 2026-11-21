@@ -1,2 +1,2 @@
-:root{--bg:#F5F6F8;--surface:#FFFFFF;--primary:#496FAD;--text:#202938;--text-2:#8993A3;--border:#E5E8ED;--primary-soft:rgba(73,111,173,.1);--danger:#C0392B;--radius:12px;--radius-s:8px;--shadow:0 1px 2px rgba(20,30,50,.06);--font:'Inter','Noto Sans Thai',system-ui,sans-serif;--sidebar-w:240px}
-[data-theme=dark]{--bg:#171B23;--surface:#222936;--primary:#79A7E8;--text:#F0F2F5;--text-2:#A1ADBD;--border:#343E4D;--primary-soft:rgba(121,167,232,.14);--danger:#F28B82;--shadow:none;color-scheme:dark}
+:root{--bg:#101010;--bg2:#171717;--surface:#1D1D1D;--text:#F2F2F2;--text-2:#A0A0A0;--muted:#707070;--border:#303030;--danger:#E58A80;--accent:#A0A0A0;--font:'Inter','Noto Sans Thai',system-ui,sans-serif;--display:'Instrument Serif','Noto Serif Thai',Georgia,serif;--sidebar-w:232px;color-scheme:dark}
+[data-theme=light]{--bg:#EFEFEC;--bg2:#E8E8E4;--surface:#F7F7F5;--text:#151515;--text-2:#555;--muted:#8A8A86;--border:#D2D2CC;--danger:#B3382C;color-scheme:light}
